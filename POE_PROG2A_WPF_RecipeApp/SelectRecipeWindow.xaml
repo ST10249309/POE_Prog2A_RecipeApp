@@ -1,0 +1,15 @@
+﻿<Window x:Class="RecipeApp.SelectRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Select Recipe" Height="300" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Select Recipe" FontSize="20" HorizontalAlignment="Center" Margin="10"/>
+            <ListBox Name="RecipeListBox" Margin="10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button Content="Select" Name="SelectButton" Margin="5" Click="SelectButton_Click"/>
+                <Button Content="Cancel" Name="CancelButton" Margin="5" Click="CancelButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

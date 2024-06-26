@@ -1,0 +1,20 @@
+﻿<Window x:Class="RecipeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Recipe App" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Welcome to the Recipe App!" FontSize="20" Margin="10" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button Content="Enter recipe" Name="EnterRecipeButton" Margin="5"/>
+                <Button Content="Scale recipe" Name="ScaleRecipeButton" Margin="5"/>
+                <Button Content="Reset quantities" Name="ResetQuantitiesButton" Margin="5"/>
+                <Button Content="Clear recipe data" Name="ClearRecipeDataButton" Margin="5"/>
+                <Button Content="List all recipes" Name="ListAllRecipesButton" Margin="5"/>
+                <Button Content="Filter recipes" Name="FilterRecipesButton" Margin="5"/>
+                <Button Content="Exit" Name="ExitButton" Margin="5"/>
+            </StackPanel>
+            <ListBox Name="RecipeListBox" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="RecipeApp.EnterIngredientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Enter Ingredient" Height="400" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Enter Ingredient" FontSize="20" HorizontalAlignment="Center" Margin="10"/>
+
+            <TextBlock Text="Name:"/>
+            <TextBox Name="IngredientNameTextBox" Margin="5"/>
+
+            <TextBlock Text="Quantity:"/>
+            <TextBox Name="QuantityTextBox" Margin="5"/>
+
+            <TextBlock Text="Unit:"/>
+            <TextBox Name="UnitTextBox" Margin="5"/>
+
+            <TextBlock Text="Calories:"/>
+            <TextBox Name="CaloriesTextBox" Margin="5"/>
+
+            <TextBlock Text="Food Group:"/>
+            <ComboBox Name="FoodGroupComboBox" Margin="5">
+                <ComboBoxItem Content="Starchy Foods"/>
+                <ComboBoxItem Content="Vegetables and Fruits"/>
+                <ComboBoxItem Content="Dry Beans, Peas, Lentils and Soya"/>
+                <ComboBoxItem Content="Chicken, Fish, Meat and Eggs"/>
+                <ComboBoxItem Content="Milk and Dairy Products"/>
+                <ComboBoxItem Content="Fats and Oil"/>
+                <ComboBoxItem Content="Water"/>
+            </ComboBox>
+
+            <Button Content="Save" Name="SaveButton" Margin="5" Click="SaveButton_Click"/>
+            <Button Content="Cancel" Name="CancelButton" Margin="5" Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
